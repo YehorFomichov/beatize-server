@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, ObjectId } from 'mongoose';
-import { Genres, GenresDocument } from '../../models/genres.schema';
+import { Genres, GenresDocument } from './genres.schema';
 import { CreateGenreDto } from './dto/create-genre.dto';
-import { Album } from '../../models/album.schema';
+import { Album } from '../album/dto/album.schema';
 
 @Injectable()
 export class GenresService {

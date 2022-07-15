@@ -3,10 +3,10 @@ import { AlbumController } from './album.controller';
 import { AlbumService } from './album.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { FileService } from '../file/file.service';
-import { Track, TrackSchema } from '../../models/track.schema';
-import { Album, AlbumSchema } from '../../models/album.schema';
+import { Track, TrackSchema } from '../track/track.schema';
+import { Album, AlbumSchema } from './dto/album.schema';
 import { GenresModule } from '../genres/genres.module';
-import { GenresSchema } from '../../models/genres.schema';
+import { GenresSchema } from '../genres/genres.schema';
 @Module({
   imports: [
     MongooseModule.forFeature([

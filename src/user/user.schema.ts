@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 import * as mongoose from 'mongoose';
-import { Album } from './album.schema';
+import { Album } from '../album/dto/album.schema';
 export type UserDocument = User & Document;
 @Schema()
 export class User {

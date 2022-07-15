@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 import * as mongoose from 'mongoose';
-import { Track } from './track.schema';
+import { Track } from '../../track/track.schema';
 export type AlbumDocument = Album & Document;
 @Schema()
 export class Album {

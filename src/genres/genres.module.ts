@@ -3,8 +3,8 @@ import { GenresController } from './genres.controller';
 import { GenresService } from './genres.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { FileService } from '../file/file.service';
-import { Album, AlbumSchema } from '../../models/album.schema';
-import { Genres, GenresSchema } from '../../models/genres.schema';
+import { Album, AlbumSchema } from '../album/dto/album.schema';
+import { Genres, GenresSchema } from './genres.schema';
 @Module({
   imports: [
     MongooseModule.forFeature([
